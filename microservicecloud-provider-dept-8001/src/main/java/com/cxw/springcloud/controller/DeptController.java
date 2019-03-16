@@ -15,8 +15,8 @@ public class DeptController
 {
 	@Autowired
 	private DeptService service;
-/*	@Autowired
-	private DiscoveryClient client;*/
+	@Autowired
+	private DiscoveryClient client;
 
 	@RequestMapping(value = "/dept/add", method = RequestMethod.POST)
 	public boolean add(@RequestBody Dept dept)
@@ -39,7 +39,6 @@ public class DeptController
 	
 //	@Autowired
 //	private DiscoveryClient client;
-/*
 	@RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)
 	public Object discovery()
 	{
@@ -53,6 +52,5 @@ public class DeptController
 		}
 		return this.client;
 	}
-*/
 
 }
